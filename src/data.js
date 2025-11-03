@@ -426,9 +426,9 @@ const rosters = [
     "Lizardmen",
     [
       positional(12, "Skink Runner", 60000, 8, 2, 3, 4, 8, [skills.dodge, skills.stunty], "A", "GPS"),
-      positional(2, "Chameleon Skink", 70000, 7, 2, 3, 3, 8, [skills.dodge, skills.onTheBall, skills.shadowing, skills.stunty], "A", "GPS"),
-      positional(6, "Saurus Blocker", 85000, 6, 4, 5, 6, 10, [], "GS", "A"),
-      positional(1, "Kroxigor", 140000, 6, 5, 5, null, 10, [skills.boneHead, skills.loner(4), skills.mightyBlow(1), skills.prehensileTail, skills.thickSkull], "S", "AG")
+      positional(2, "Chameleon Skink", 70000, 7, 2, 3, 3, 8, [skills.dodge, skills.onTheBall, skills.shadowing, skills.stunty], "AP", "GS"),
+      positional(6, "Saurus Blocker", 90000, 6, 4, 5, 6, 10, [skills.juggernaut], "GS", "A"),
+      positional(1, "Kroxigor", 140000, 6, 5, 5, 6, 10, [skills.boneHead, skills.loner(4), skills.mightyBlow(1), skills.prehensileTail, skills.thickSkull], "S", "AG")
     ],
     70000,
     1,
