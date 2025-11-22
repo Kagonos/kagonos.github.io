@@ -1,4 +1,17 @@
 const skills = {
+  // Devious
+  sneakyGit: "Sneaky Git",
+  dirtyPlayer: (x) => "Dirty Player (+" + x + ")",
+  fumblerooskie: "Fumblerooskie",
+  EyeGouge: "Eye Gouge",
+  LethalFlight: "Lethal Flight",
+  LoneFouler: "Lone Fouler",
+  pileDriver: "Pile Driver",
+  Putthebootin: "Put the boot in",
+  QuickFoul: "Quick Foul",
+  Saboteur: "Saboteur",
+  shadowing: "Shadowing",
+  Violentinnovator: "Violent Innovator",
   // Agility
   catch: "Catch",
   divingCatch: "Diving Catch",
@@ -9,18 +22,15 @@ const skills = {
   leap: "Leap",
   safePairOfHands: "Safe Pair of Hands",
   sideStep: "Side Step",
-  sneakyGit: "Sneaky Git",
   sprint: "Sprint",
   sureFeet: "Sure Feet",
   // General
   block: "Block",
   dauntless: "Dauntless",
-  dirtyPlayer: (x) => "Dirty Player (+" + x + ")",
   fend: "Fend",
   frenzy: "Frenzy",
   kick: "Kick",
   pro: "Pro",
-  shadowing: "Shadowing",
   stripBall: "Strip Ball",
   sureHands: "Sure Hands",
   tackle: "Tackle",
@@ -43,7 +53,6 @@ const skills = {
   cannoneer: "Cannoneer",
   cloudBurster: "Cloud Burster",
   dumpOff: "Dump-off",
-  fumblerooskie: "Fumblerooskie",
   hailMaryPass: "Hail Mary Pass",
   leader: "Leader",
   nervesOfSteel: "Nerves of Steel",
@@ -60,7 +69,6 @@ const skills = {
   juggernaut: "Juggernaut",
   mightyBlow: (x) => "Mighty Blow (+" + x + ")",
   multipleBlock: "Multiple Block",
-  pileDriver: "Pile Driver",
   standFirm: "Stand Firm",
   strongArm: "Strong Arm",
   thickSkull: "Thick Skull",
@@ -425,10 +433,10 @@ const rosters = [
   roster(
     "Lizardmen",
     [
-      positional(12, "Skink Runner", 60000, 8, 2, 3, 4, 8, [skills.dodge, skills.stunty], "A", "GPS"),
-      positional(2, "Chameleon Skink", 70000, 7, 2, 3, 3, 8, [skills.dodge, skills.onTheBall, skills.shadowing, skills.stunty], "A", "GPS"),
-      positional(6, "Saurus Blocker", 85000, 6, 4, 5, 6, 10, [], "GS", "A"),
-      positional(1, "Kroxigor", 140000, 6, 5, 5, null, 10, [skills.boneHead, skills.loner(4), skills.mightyBlow(1), skills.prehensileTail, skills.thickSkull], "S", "AG")
+      positional(12, "Skink Runner", 60000, 8, 2, 3, 4, 8, [skills.dodge, skills.stunty], "A", "GDPS"),
+      positional(2, "Chameleon Skink", 70000, 7, 2, 3, 3, 8, [skills.dodge, skills.onTheBall, skills.shadowing, skills.stunty], "AP", "GDS"),
+      positional(6, "Saurus Blocker", 90000, 6, 4, 5, 6, 10, [skills.juggernaut, skills.Unsteady], "GS", "A"),
+      positional(1, "Kroxigor", 140000, 6, 5, 5, 6, 10, [skills.boneHead, skills.loner(4), skills.mightyBlow(1), skills.prehensileTail, skills.thickSkull], "S", "AG")
     ],
     70000,
     1,
